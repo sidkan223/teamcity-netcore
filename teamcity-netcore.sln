@@ -3,7 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teamcity-netcore", "teamcity-netcore\teamcity-netcore.csproj", "{E0289CBD-0484-4AC7-B3D3-CCF6D7BEA5B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "teamcity-netcore", "teamcity-netcore\teamcity-netcore.csproj", "{E0289CBD-0484-4AC7-B3D3-CCF6D7BEA5B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{2D226B11-1B3A-414F-B08D-05B02CED6014}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "setup", "setup", "{A51403E0-7232-422C-9C2D-49103E6D6B97}"
+	ProjectSection(SolutionItems) = preProject
+		database\setup\Create.sql = database\setup\Create.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{22825453-A867-4E40-B3DF-D7E793F7710D}"
+	ProjectSection(SolutionItems) = preProject
+		database\data\dummy_data.sql = database\data\dummy_data.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "patches", "patches", "{E1011201-A0B5-455A-BCE7-E35B529C3800}"
+	ProjectSection(SolutionItems) = preProject
+		database\patches\202005231651.sql = database\patches\202005231651.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unit-tests", "unit-tests\unit-tests.csproj", "{A7003F01-2827-4ADE-A769-61F231F4DB04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +34,18 @@ Global
 		{E0289CBD-0484-4AC7-B3D3-CCF6D7BEA5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0289CBD-0484-4AC7-B3D3-CCF6D7BEA5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0289CBD-0484-4AC7-B3D3-CCF6D7BEA5B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7003F01-2827-4ADE-A769-61F231F4DB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7003F01-2827-4ADE-A769-61F231F4DB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7003F01-2827-4ADE-A769-61F231F4DB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7003F01-2827-4ADE-A769-61F231F4DB04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A51403E0-7232-422C-9C2D-49103E6D6B97} = {2D226B11-1B3A-414F-B08D-05B02CED6014}
+		{22825453-A867-4E40-B3DF-D7E793F7710D} = {2D226B11-1B3A-414F-B08D-05B02CED6014}
+		{E1011201-A0B5-455A-BCE7-E35B529C3800} = {2D226B11-1B3A-414F-B08D-05B02CED6014}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA22C57D-F965-4F5E-9767-2D92777F9161}
